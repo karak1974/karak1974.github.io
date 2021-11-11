@@ -2,126 +2,11 @@
 <html>
 <head>
     <title>Wolfy.me</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="utf-8"/>
-    <style>
-    * {box-sizing: border-box;}
-    body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #444;
-    }
-    .button {
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 650;
-    margin: 2px 1px;
-    cursor: pointer;
-    width: 20%;
-    }
-    .left {
-    border: 5px;
-    display: flex;
-    justify-content: left;
-    width: 32%;
-    margin: 0 auto;
-    background: #333;
-    color: #999;
-    }
-    .navbar {
-    overflow: hidden;
-    background-color: #222;
-    }
-    .navbar a {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-    .navbar-left {
-    float: left;
-    }
-    .color-discord {
-    color: #333;
-    background-color: #738ADB;
-    }
-    .color-github {
-    color: #111;
-    background-color: #8754ed;
-    }
-    .color-twitter {
-    color: #333;
-    background-color: #1DA1F2;
-    }
-    .color-telegram {
-    color: #333;
-    background-color: #6cc1e3;
-    }
-    .center {
-    border: 5px;
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    margin: 0 auto;
-    background: #444;
-    color: #999;
-    }
-    #project {
-    border: 5px;
-    display:none;
-    justify-content: center;
-    width: 40%;
-    margin: 0 auto;
-    background: #444;
-    color: #999;
-    }
-    #projects {
-    border: 5px;
-    display:none;
-    justify-content: left;
-    width: 40%;
-    margin: 0 auto;
-    margin-left: 45%;
-    background: #444;
-    color: #999;
-    }
-    #contact {
-    border: 5px;
-    display:none;
-    justify-content: center;
-    width: 40%;
-    margin: 0 auto;
-    background: #444;
-    color: #999;
-    }
-    #contacts {
-    border: 5px;
-    display:none;
-    justify-content: center;
-    width: 40%;
-    margin: 0 auto;
-    background: #444;
-    color: #999;
-    }
-    .bio {
-    border: 5px;
-    display: flex;
-    justify-content: left;
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-    padding: 0 8% 0 8%;
-    background: #555;
-    color: #999;
-    margin-bottom: 20px;
-    }
-    </style>
 </head>
 <body onload='charByChar();'>
 
@@ -129,64 +14,28 @@
         <a class="navbar-left">Wolfy.me</a>
     </div>
 
-        <div style="padding-top: 50px;">
-            <div class="center">
-                <h1>Wolfy</h1>
-            </div>
-            <div class="bio" id="bio"><br>
-            </div>
-            <div id="project"><h2>Latest Projects</h2></div>
-            <div id="projects"><h3>
-                <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/flag_submit_system">Flag Submit System</a><br>
-                <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/no">No</a><br>
-            </h3></div>
+    <div style="padding-top: 50px;">
+        <div class="center">
+            <h1>Wolfy</h1>
+        </div>
+        <div class="bio" id="bio"><br>
+        </div>
+        <div id="project"><h2>Latest Projects</h2></div>
+        <div id="projects"><h3>
+            <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/flag_submit_system">Flag Submit System</a><br>
+            <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/no">No</a><br>
+        </h3></div>
 
-            <div id="contact"><h2>Contacts</h2></div>
-            <div id="contacts">
-                <button class="button color-discord" onclick="location.replace('https://dsc.bio/wolfylink')"><i class="fab fa-discord"></i>&nbsp;Discord</button>
-                <div style="width: 10px;"></div>
-                <button class="button color-github" onclick="location.replace('https://github.com/karak1974/')"><i class="fab fa-github"></i>&nbsp;Github</button>
-                <div style="width: 10px;"></div>
-                <button class="button color-twitter" onclick="location.replace('https://twitter.com/wolfy_42')"><i class="fab fa-twitter"></i>&nbsp;Twitter</button>
-                <div style="width: 10px;"></div>
-                <button class="button color-telegram" onclick="location.replace('https://t.me/wolfy_42')"><i class="fab fa-telegram-plane"></i>&nbsp;Telegram</button>
-            </div>
+        <div id="contact"><h2>Contacts</h2></div>
+        <div id="contacts">
+            <button class="button color-discord" onclick="location.replace('https://dsc.bio/wolfylink')"><i class="fab fa-discord"></i>&nbsp;Discord</button>
+            <div style="width: 10px;"></div>
+            <button class="button color-github" onclick="location.replace('https://github.com/karak1974/')"><i class="fab fa-github"></i>&nbsp;Github</button>
+            <div style="width: 10px;"></div>
+            <button class="button color-twitter" onclick="location.replace('https://twitter.com/wolfy_42')"><i class="fab fa-twitter"></i>&nbsp;Twitter</button>
+            <div style="width: 10px;"></div>
+            <button class="button color-telegram" onclick="location.replace('https://t.me/wolfy_42')"><i class="fab fa-telegram-plane"></i>&nbsp;Telegram</button>
         </div>
     </div>
-
-    <script>
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-        function opacity(box) {
-            document.getElementById(box).style.display="flex";
-            var elem = document.getElementById(box);
-            elem.style.opacity = 0.1;
-            elem.style.transition = "opacity 1s";
-            setTimeout(function(){ elem.style.opacity = 1;} , 250);
-        }
-        async function charByChar() {
-            let input = "A wholesome wolf surfing on the internet from its dorm's slow Wi-Fi. In his free time he's a hobby-hacker on TryHackMe and HackTheBox. He's learning GO, Java and C but his favourite language is the GO. This wolf also likes playing with video games. Especially with RPGs.";
-            //let input = "asd";
-            let current = "<h3>";
-            printElement(current, input);
-        }
-
-        async function printElement(current, input) {
-            document.getElementById("bio").innerHTML = "<h3>";
-            await sleep(250);
-            for (let i = 0; i < input.length; i++) {
-                await sleep(50);
-                current = current + input[i];
-                document.getElementById("bio").innerHTML = current;
-            }
-            opacity("project");
-            opacity("projects");
-            await sleep(500);
-            opacity("contact");
-            opacity("contacts");
-            document.getElementById("bio").innerHTML = current + "</h3>";
-        }
-    </script>
 </body>
 </html>
