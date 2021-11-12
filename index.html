@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wolfy.me</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="utf-8"/>
+	<meta charset="UTF-8">
+	<title>Wolfy.me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body onload='charByChar();'>
-
-    <div class="navbar">
-        <a class="navbar-left">Wolfy.me</a>
-    </div>
-
-    <div style="padding-top: 50px;">
-        <div class="center">
-            <h1>Wolfy</h1>
-        </div>
-        <div class="bio" id="bio"><br>
-        </div>
-        <div id="project"><h2>Latest Projects</h2></div>
-        <div id="projects"><h3>
-            <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/flag_submit_system">Flag Submit System</a><br>
-            <i class="fab fa-github-square"></i> &#8231; <a href="https://github.com/karak1974/no">No</a><br>
-        </h3></div>
-
-        <div id="contact"><h2>Contacts</h2></div>
-        <div id="contacts">
-            <button class="button color-discord" onclick="location.replace('https://dsc.bio/wolfylink')"><i class="fab fa-discord"></i>&nbsp;Discord</button>
-            <div style="width: 10px;"></div>
-            <button class="button color-github" onclick="location.replace('https://github.com/karak1974/')"><i class="fab fa-github"></i>&nbsp;Github</button>
-            <div style="width: 10px;"></div>
-            <button class="button color-twitter" onclick="location.replace('https://twitter.com/wolfy_42')"><i class="fab fa-twitter"></i>&nbsp;Twitter</button>
-            <div style="width: 10px;"></div>
-            <button class="button color-telegram" onclick="location.replace('https://t.me/wolfy_42')"><i class="fab fa-telegram-plane"></i>&nbsp;Telegram</button>
-        </div>
-    </div>
+	<div id="navbar">
+		<a id="navbar-left">Wolfy.me</a>
+	</div>
+	<div id="content">
+		<div id="center">
+			<h1>Wolfy</h1>
+		</div>
+		<div id="bio"></div>
+		<div id="project">
+			<h2>Latest Projects</h2>
+		</div>
+		<div id="projects">
+			<h3>
+				<i class="fab fa-github-square"></i>
+					&#8231;
+					<a>Flag Submit System</a>
+					<br>
+				<i class="fab fa-github-square"></i>
+					&#8231;
+					<a>No</a>
+					<br>
+			</h3>
+		</div>
+		<div id="contact">
+			<h2>Contacts</h2>
+		</div>
+		<div id="contacts">
+			<button class="button" id="color-discord">
+				<i class="fab_images fab fa-discord"></i>
+				<p>Discord</p>
+			</button>
+			<button class="button" id="color-github">
+				<i class="fab_images fab fa-github"></i>
+				<p>Github</p>
+			</button>
+			<button class="button" id="color-twitter">
+				<i class="fab_images fab fa-twitter"></i>
+				<p>Twitter</p>
+			</button>
+			<button class="button" id="color-telegram">
+				<i class="fab_images fab fa-telegram-plane"></i>
+				<p>Telegram</p>
+			</button>
+		</div>
+	</div>
 </body>
 </html>
