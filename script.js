@@ -19,7 +19,7 @@ function isMobileDevice() {
 async function charByChar() {
 	let input = "Hungarian high school student~" +
 	"Coder, hacker, gamer~" +
-	"Main coding languages: Go, C, Python, SQLite3~" +
+	"Main coding languages: Go, C, Python~" +
 	"IOT technologies: Arduino, Esp32, Attiny85";
 	let current = "<h3>";
 	printElement(current, input);
