@@ -17,80 +17,52 @@ function isMobileDevice() {
 }
 
 async function charByChar() {
-	let input = "Hungarian high school student~" +
-	"Coder, hacker, gamer~" +
-	"Main coding languages: Go, C, Python~" +
-	"IOT technologies: Arduino, Esp32, Attiny85";
-	let current = "<h3>";
-	printElement(current, input);
+	let input = "package main~~"+
+	"import (~"+
+	"	\"fmt\"~"+
+	")~~"+
+	"type Myself struct {~"+  
+	"	Username  string~"+
+	"	Student   string~"+
+	"	Age       int~"+
+	"	Hobbies   []string~"+
+	"	Languages []string~"+
+	"	IoTtechs  []string~"+
+	"}~~"+
+	"func main() {~"+
+	"	myself := Myself{~"+
+	"		Username:  \"Wolfy\",~"+
+	"		Student:   \"Technical High School\",~"+
+	"		Age:       17,~"+
+	"		Hobbies:   []string{\"Coding\", \"Hacking\", \"Gaming\"},~"+
+	"		Languages: []string{\"Go\", \"C\", \"Python\", \"Java\"},~"+
+	"		IoTtechs:  []string{\"ESP32\", \"Arduino\", \"Attiny\", \"Raspberry Pi\"},~"+
+	"	}~"+
+	"	fmt.Println(myself)~"+
+	"}~";
+	printElement("<h3>", input);
 
-	for (let i = 0; i < document.getElementsByTagName('button').length; i++) {
-		document.getElementsByTagName('button')[i].addEventListener('mouseout', function() {
-			document.getElementsByTagName('button')[i].style.opacity = '0.8';
-			document.getElementsByTagName('button')[i].style.transition = '0.8s';
-		});
-
-		document.getElementsByTagName('button')[i].addEventListener('mouseover', function() {
-			document.getElementsByTagName('button')[i].style.opacity = '1.0';
-			document.getElementsByTagName('button')[i].style.transition = '0.8s';
-		});
-
-		document.getElementsByTagName('button')[i].addEventListener('click', function() {
-			if (i == 0) {
-				// Discord
-				window.open('https://dsc.bio/wolfylink', '_blank');
-			}
-			else if (i == 1) {
-				// Github
-				window.open('https://github.com/karak1974/', '_blank');
-			}
-			else if (i == 2) {
-				// Twitter
-				window.open('https://twitter.com/wolfy_42', '_blank');
-			}
-			else if (i == 3) {
-				// Telegram
-				window.open('https://t.me/wolfy_42', '_blank');
-			}
-		});
-	}
-
-	for (let j = 0; j < document.getElementsByTagName('a').length; j++) {
-		document.getElementsByTagName('a')[j].addEventListener('click', function() {
-			if (j == 0) {
-				location.replace(location);
-			}
-			else if (j == 1) {
-				window.open('https://github.com/karak1974/flag_submit_system', '_blank');
-			}
-			else if (j == 2) {
-				window.open('https://github.com/karak1974/no', '_blank');
-			}
-		});
-	}
 }
 
 async function printElement(current, input) {
-	document.getElementById("bio").innerHTML = "<h3>";
+	document.getElementById("codeBody").innerHTML = "<h3>";
 	await sleep(250);
 
 	for (let i = 0; i < input.length; i++) {
-		await sleep(40);
+		await sleep(15);
 
 		if (input[i] == "~" ) {
 			current = current + "<br>";
-		}
-		else {
+		} else if (input[i] == "	") {
+			current = current + "&nbsp;&nbsp;&nbsp;&nbsp;";
+		} else if (input[i] == " ") {
+			current = current + "&nbsp;";
+		} else {
 			current = current + input[i];
 		}
 
-		document.getElementById("bio").innerHTML = current;
+		document.getElementById("codeBody").innerHTML = current;
 	}
 
-	opacity("project");
-	opacity("projects");
-	await sleep(500);
-	opacity("contact");
-	opacity("contacts");
-	document.getElementById("bio").innerHTML = current + "</h3>";
+	document.getElementById("codeBody").innerHTML = current + "</h3>";
 }
