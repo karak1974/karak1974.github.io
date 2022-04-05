@@ -51,8 +51,6 @@ async function printElement(current, input) {
 	for (let i = 0; i < input.length; i++) {
 		await sleep(15);
 
-		current = current.substring(0, current.length-1);
-
 		if (input[i] == "~" ) {
 			current = current + "<br>";
 		} else if (input[i] == "	") {
@@ -61,9 +59,6 @@ async function printElement(current, input) {
 			current = current + "&nbsp;";
 		} else {
 			current = current + input[i];
-		}
-		if (i < input.length-1) {
-			current = current + "_";
 		}
 
 		document.getElementById("codeBody").innerHTML = current;
