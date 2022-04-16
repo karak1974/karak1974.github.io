@@ -8,11 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 </head>
-<body onload='charByChar();'>
+<body onload='main();'>
 
-		<div id="codeBody"></div>
+		<div id="terminal">
+			<div id="codeBody"></div>
+		</div>
 
-		<div id="footer">
+		<div id="navbar">
 			<button onclick="redirection(0)" class="button" id="color-discord">
 				<i class="fab_images fab fa-discord"></i>
 			</button>
@@ -25,6 +27,15 @@
 			<button onclick="redirection(3)" class="button" id="color-telegram">
 				<i class="fab_images fab fa-telegram-plane"></i>
 			</button>
+
+			<button class="right" id="time"></button>
+			<button class="right">
+				<i class="fa-solid fa-wifi"></i> eth0
+				<i class="fa-solid fa-battery-full"></i> 87%
+				<i class="fa-solid fa-volume-high"></i> 50%
+				<i class="fa-solid fa-clock"></i>
+			</button>
+
 		</div>
 
 </body>

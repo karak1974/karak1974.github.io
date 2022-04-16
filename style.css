@@ -8,102 +8,109 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
-	background: black;
+	background-image: url("gopher.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .button {
 	border: none;
-	text-align: center;
-	font-size: 15px;
-	font-weight: 150;
-	margin: 0 0  0 10px;
+	text-align: left;
+	font-size: 10px;
+	font-weight: 100;
 	cursor: pointer;
-	width: 20%;
+}
+.right {
+	background: #525D78;
+	border: none;
+	float: right;
+	font-size: 20px;
+	font-weight: 100;
+	pointer-events: none;
+}
+#time {
+	margin-right: 10px;
 }
 #color-discord {
-	background: #444;
+	background: #525D78;
 	color: #738ADB;
-	width: 50px;
-	opacity: 0.8;
+	width: 35px;
 }
 #color-github {
-	background: #444;
+	background: #525D78;
 	color: #8754ed;
-	width: 50px;
-	opacity: 0.8;
+	width: 35px;
 }
 #color-twitter {
-	background: #444;
+	background: #525D78;
 	color: #1DA1F2;
-	width: 50px;
-	opacity: 0.8;
+	width: 35px;
 }
 #color-telegram {
-	background: #444;
+	background: #525D78;
 	color: #6cc1e3;
-	width: 50px;
-	opacity: 0.8;
+	width: 35px;
 }
-#footer {
+#navbar {
 	position: fixed;
-   	left: 0;
-   	bottom: 0;
+   	top: 0;
 	width: 100%;
-	justify-content: center;
-	background: #444;
+	background: #525D78;
 	color: #999;
-	padding: 5px 0 5px 0;
+	padding: 2px 0 0 0;
+}
+#terminal {
+	background-color: rgb(68, 68, 68, 0.8);
+	border: 5px solid #2d8bcb;
+	height: 80%;
+	margin: 5% 5% 0 5%;
 }
 #codeBody {
 	border: 5px;
 	display: block;
 	justify-content: left;
-	width: 100%;
+	width: 98%;
 	height: max-content;
 	margin: left;
 	padding-left: 20px;
-	background: black;
-	color: #149414;
+	background-color: rgb(68, 68, 68, 0.0);
+	color: #C0BFFF;
 	margin-bottom: 20px;
 }
 .fab_images {
-	font-size: 30px;
-	width: 30px;
+	font-size: 25px;
+	width: 35px;
 	height: 30px;
 }
 
 @media screen and (max-width: 800px) {
-	#bio {
-		width: 30vw;
+	#codeBody {
+		width: 20vw;
 		font-size: 13px;
 	}
 	#color-discord {
 		color: #738ADB;
-		background: #444;
-		width: 30px;
-		opacity: 0.8;
+		background: #525D78;
+		width: 35px;
 	}
 	#color-github {
 		color: #8754ed;
-		background: #444;
-		width: 30px;
-		opacity: 0.8;
+		background: #525D78;
+		width: 35px;
 	}
 	#color-twitter {
 		color: #1DA1F2;
-		background: #444;
-		width: 30px;
-		opacity: 0.8;
+		background: #525D78;
+		width: 35px;
 	}
 	#color-telegram {
 		color: #6cc1e3;
-		background: #444;
-		width: 30px;
-		opacity: 0.8;
+		background: #525D78;
+		width: 35px;
 	}
 	.fab_images {
-		font-size: 35px;
+		font-size: 25px;
 		padding: 15px 0 0 0;
-		width: 30px;
+		width: 35px;
 		height: 60px;
 	}
 }

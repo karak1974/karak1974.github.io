@@ -16,8 +16,16 @@ function isMobileDevice() {
     return check;
 }
 
-async function charByChar() {
-	let input = "package main~~"+
+async function main() {
+	var currentdate = new Date();
+	let cDay = currentdate.getDate()
+	let cMonth = currentdate.getMonth() + 1
+	let cYear = currentdate.getFullYear()
+
+	let datetime = cYear+"/"+cMonth+"/"+cDay;
+	document.getElementById("time").innerHTML = datetime;
+
+	let input = "~package main~~"+
 	"import (~"+
 	"	\"fmt\"~"+
 	")~~"+
@@ -40,13 +48,13 @@ async function charByChar() {
 	"	}~"+
 	"	fmt.Println(myself)~"+
 	"}~";
-	printElement("<h3>", input);
+	printElement('<h3><font color="#BAF9F2">wolfy@artix ~/karak1974.github.io (main)> cat main.go</font>', input);
 
 }
 
 async function printElement(current, input) {
-	document.getElementById("codeBody").innerHTML = "<h3>";
-	await sleep(250);
+	document.getElementById("codeBody").innerHTML = current;
+	await sleep(1500);
 
 	for (let i = 0; i < input.length; i++) {
 		await sleep(15);
