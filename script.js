@@ -28,7 +28,7 @@ async function main() {
 	let input = "~package main~~"+
 	"import (~"+
 	"	\"fmt\"~"+
-	")~~"+"	Job       string~"+
+	")~~"+
 	"type Myself struct {~"+  
 	"	Username  string~"+
 	"	Student   string~"+
@@ -42,7 +42,7 @@ async function main() {
 	"	myself := Myself{~"+
 	"		Username:  \"Wolfy\",~"+
 	"		Student:   \"Technical High School\",~"+
-	"		Job:       \"Junior Go Dev\",~"+
+	"		Job:       \"Junior Go\",~"+
 	"		Age:       17,~"+
 	"		Hobbies:   []string{\"Coding\", \"Hacking\", \"Gaming\"},~"+
 	"		Languages: []string{\"Go\", \"C\", \"Python\", \"Java\"},~"+
