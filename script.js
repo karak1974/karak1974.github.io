@@ -32,6 +32,7 @@ async function main() {
 	"type Myself struct {~"+  
 	"	Username  string~"+
 	"	Student   string~"+
+	"	Job       string~"+
 	"	Age       int~"+
 	"	Hobbies   []string~"+
 	"	Languages []string~"+
@@ -41,6 +42,7 @@ async function main() {
 	"	myself := Myself{~"+
 	"		Username:  \"Wolfy\",~"+
 	"		Student:   \"Technical High School\",~"+
+	"       Job:       \"Junior Go Dev\",~"+
 	"		Age:       17,~"+
 	"		Hobbies:   []string{\"Coding\", \"Hacking\", \"Gaming\"},~"+
 	"		Languages: []string{\"Go\", \"C\", \"Python\", \"Java\"},~"+
