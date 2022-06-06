@@ -59,10 +59,8 @@ body {
 	padding: 2px 0 0 0;
 }
 #terminal {
-	background-color: rgb(68, 68, 68, 0.8);
-	border: 5px solid #2d8bcb;
 	height: 80%;
-	margin: 5% 5% 0 5%;
+	margin: 3% 2% 0 2%;
 }
 #codeBody {
 	border: 5px;
@@ -73,7 +71,7 @@ body {
 	margin: left;
 	padding-left: 20px;
 	background-color: rgb(68, 68, 68, 0.0);
-	color: #C0BFFF;
+	color: #E8ffBf;
 	margin-bottom: 20px;
 }
 .fab_images {
@@ -82,35 +80,17 @@ body {
 	height: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: url("gopher.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #0d3642;
+	}
+	#navbar {
+		display: none;
+	}
 	#codeBody {
-		width: 20vw;
-		font-size: 13px;
+		padding-top: 50%;
 	}
-	#color-discord {
-		color: #738ADB;
-		background: #525D78;
-		width: 35px;
-	}
-	#color-github {
-		color: #8754ed;
-		background: #525D78;
-		width: 35px;
-	}
-	#color-twitter {
-		color: #1DA1F2;
-		background: #525D78;
-		width: 35px;
-	}
-	#color-telegram {
-		color: #6cc1e3;
-		background: #525D78;
-		width: 35px;
-	}
-	.fab_images {
-		font-size: 25px;
-		padding: 15px 0 0 0;
-		width: 35px;
-		height: 60px;
-	}
-}
+  }

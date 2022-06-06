@@ -25,33 +25,34 @@ async function main() {
 	let datetime = cYear+"/"+cMonth+"/"+cDay;
 	document.getElementById("time").innerHTML = datetime;
 
-	let input = "~package main~~"+
-	"import (~"+
-	"	\"fmt\"~"+
-	")~~"+
-	"type Myself struct {~"+  
-	"	Username  string~"+
-	"	Student   string~"+
-	"	Job       string~"+
-	"	Age       int~"+
-	"	Hobbies   []string~"+
-	"	Languages []string~"+
-	"	IoTtechs  []string~"+
-	"}~~"+
-	"func main() {~"+
-	"	myself := Myself{~"+
-	"		Username:  \"Wolfy\",~"+
-	"		Student:   \"Technical High School\",~"+
-	"		Job:       \"Junior Go Dev\",~"+
-	"		Age:       17,~"+
-	"		Hobbies:   []string{\"Coding\", \"Hacking\", \"Gaming\"},~"+
-	"		Languages: []string{\"Go\", \"C\", \"Python\", \"Java\"},~"+
-	"		IoTtechs:  []string{\"ESP32\", \"Arduino\", \"Attiny\", \"Raspberry Pi\"},~"+
-	"	}~"+
-	"	fmt.Println(myself)~"+
-	"}~";
-	printElement('<h3><font color="#BAF9F2">wolfy@artix ~/karak1974.github.io (main)> cat main.go</font>', input);
-
+	let input = "about_me:~"+
+	"	username:~"+
+	"		- \"Wolfy\"~"+
+	"	student:~"+
+	"		- \"Technical High School\"~"+
+	"	job:~"+
+	"		- \"Junior Go Dev\"~"+
+	"	age:~"+
+	"		- 17~"+
+	"	hobbies:~"+
+	"		- \"Coding\"~"+
+	"		- \"Hacking\"~"+
+	"		- \"Gaming\"~"+
+	"	languages:~"+
+	"		- \"Go\"~"+ 
+	"		- \"C\"~"+
+	"		- \"Python\"~"+
+	"		- \"Java\"~"+
+	"	iot_techs:~"+
+	"		- \"ESP32\"~"+
+	"		- \"Arduino\"~"+
+	"		- \"Attiny\"~"+
+	"		- \"Raspberry Pi\"";
+	if (!isMobileDevice()) {
+		printElement('<h3>', input);
+	} else {
+		document.getElementById("codeBody").innerHTML = "I'm not a frontend dev<br>Please open from a desktop";
+	}
 }
 
 async function printElement(current, input) {
