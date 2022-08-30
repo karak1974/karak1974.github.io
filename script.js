@@ -17,14 +17,6 @@ function isMobileDevice() {
 }
 
 async function main() {
-	var currentdate = new Date();
-	let cDay = currentdate.getDate()
-	let cMonth = currentdate.getMonth() + 1
-	let cYear = currentdate.getFullYear()
-
-	let datetime = cYear+"/"+cMonth+"/"+cDay;
-	document.getElementById("time").innerHTML = datetime;
-
 	let input = "about_me:~"+
 	"	username:~"+
 	"		- \"Wolfy\"~"+
@@ -38,15 +30,18 @@ async function main() {
 	"		- \"Coding\"~"+
 	"		- \"Hacking\"~"+
 	"		- \"Gaming\"~"+
+	"		- \"Skateboarding\"~"+
 	"	languages:~"+
-	"		- \"Go\"~"+ 
+	"		- \"Go\"~"+
 	"		- \"C\"~"+
 	"		- \"Python\"~"+
 	"		- \"Java\"~"+
+	"		- \"Perl\"~"+
 	"	iot_techs:~"+
 	"		- \"ESP32\"~"+
 	"		- \"Arduino\"~"+
 	"		- \"Attiny\"~"+
+	"		- \"Omega 2\"~"+
 	"		- \"Raspberry Pi\"";
 	if (!isMobileDevice()) {
 		printElement('<h3>', input);
@@ -81,7 +76,7 @@ async function printElement(current, input) {
 function redirection(num) {
 	switch(num) {
 		case 0:
-			window.open('https://dsc.bio/wolfylink', '_blank');
+			window.open('discordapp.com/users/511219299193716737', '_blank');
 			break;
 		case 1:
 			window.open('https://github.com/karak1974/', '_blank');
