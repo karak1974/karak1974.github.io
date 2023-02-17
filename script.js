@@ -25,7 +25,7 @@ async function main() {
 	"	job:~"+
 	"		- \"Junior Go Dev\"~"+
 	"	age:~"+
-	"		- 17~"+
+	"		- 18~"+
 	"	hobbies:~"+
 	"		- \"Coding\"~"+
 	"		- \"Hacking\"~"+
@@ -36,7 +36,6 @@ async function main() {
 	"		- \"C\"~"+
 	"		- \"Python\"~"+
 	"		- \"Java\"~"+
-	"		- \"Perl\"~"+
 	"	iot_techs:~"+
 	"		- \"ESP32\"~"+
 	"		- \"Arduino\"~"+
