@@ -7,95 +7,60 @@ body {
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	overflow-x: hidden;
-	background-image: url("gopher.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.button {
-	border: none;
-	text-align: left;
-	font-size: 10px;
-	font-weight: 100;
-	cursor: pointer;
-}
-.right {
-	background: #525D78;
-	border: none;
-	float: right;
-	font-size: 20px;
-	font-weight: 100;
-	pointer-events: none;
-}
-#time {
-	margin-right: 10px;
-}
-#color-discord {
-	background: #525D78;
-	color: #738ADB;
-	width: 35px;
-}
-#color-linkedin {
-	background: #525D78;
-	color: #6cc1e3;
-	width: 35px;
-}
-#color-github {
-	background: #525D78;
-	color: #8754ed;
-	width: 35px;
-}
-#color-twitter {
-	background: #525D78;
-	color: #1DA1F2;
-	width: 35px;
-}
-#color-telegram {
-	background: #525D78;
-	color: #6cc1e3;
-	width: 35px;
-}
-#navbar {
-	position: fixed;
-   	top: 0;
-	width: 100%;
-	background: #525D78;
-	color: #999;
-	padding: 2px 0 0 0;
-}
-#terminal {
-	height: 80%;
-	margin: 3% 2% 0 2%;
-}
-#codeBody {
-	border: 5px;
-	display: block;
-	justify-content: left;
-	width: 98%;
-	height: max-content;
-	margin: left;
-	padding-left: 20px;
-	background-color: rgb(68, 68, 68, 0.0);
-	color: #E8ffBf;
-	margin-bottom: 20px;
-}
-.fab_images {
-	font-size: 25px;
-	width: 35px;
-	height: 30px;
+	background-color: #525D78;
+	vertical-align: middle; 
+ 	text-align: center; 
 }
 
-@media only screen and (max-width: 600px) {
-	body {
-		background-image: url("gopher.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #0d3642;
-	}
-	#navbar {
-		display: none;
-	}
-	#codeBody {
-		padding-top: 50%;
-	}
-  }
+#picture {
+	margin: 0 auto;
+	width: min-content;
+	height: min-content;
+}
+
+#pic {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	width: 150px;
+	height:max-content;
+}
+
+#content {
+	margin: 10% auto;
+	width: max-content;
+	height: max-content;	
+}
+
+#main {
+	margin: 0 auto;
+	width: min-content;
+	height: min-content;
+	background: rgba(30, 30, 30, 0.1);
+	padding: 1px 35px 10px 35px;
+	border-left: #1DA1F2 solid 3px;
+	border-right: #1DA1F2 solid 3px;
+}
+
+a {text-decoration: none;}
+
+h3, p {width: max-content}
+
+#color-discord {
+	color: #738ADB;
+	width: 35px;
+	font-size: x-large;
+}
+#color-github {
+	color: #8754ed;
+	width: 35px;
+	font-size: x-large;
+}
+#color-twitter {
+	color: #1DA1F2;
+	font-size: x-large;
+}
+#color-telegram {
+	color: #6cc1e3;
+	font-size: x-large;
+}
