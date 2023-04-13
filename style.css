@@ -9,7 +9,7 @@ body {
 	height: 100vh;
 	background-color: #525D78;
 	vertical-align: middle; 
- 	text-align: center; 
+ 	text-align: center;
 }
 
 #picture {
@@ -43,6 +43,8 @@ body {
 }
 
 a {text-decoration: none;}
+
+a:link { color:inherit; }
 
 h3, p {width: max-content}
 
