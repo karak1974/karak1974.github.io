@@ -48,21 +48,23 @@ a:link { color:inherit; }
 
 h3, p {width: max-content}
 
-#color-discord {
+#discord {
 	color: #738ADB;
 	width: 35px;
 	font-size: x-large;
 }
-#color-github {
+#github {
 	color: #8754ed;
 	width: 35px;
 	font-size: x-large;
 }
-#color-twitter {
+#twitter {
 	color: #1DA1F2;
+	width: 35px;
 	font-size: x-large;
 }
-#color-telegram {
+#telegram {
 	color: #6cc1e3;
+	width: 35px;
 	font-size: x-large;
 }
